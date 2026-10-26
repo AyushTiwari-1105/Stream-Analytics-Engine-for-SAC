@@ -1,0 +1,13 @@
+{
+  "eventId": "evt-dl-demo-002",
+  "sourceId": "sac-fileserver-node-02",
+  "eventType": "DOWNLOAD_COMPLETED",
+  "eventTimestamp": "2026-10-23T10:05:00Z",
+  "schemaVersion": 1,
+  "payload": {
+    "userId": "usr_98234",
+    "fileId": "file_data_archive_77.tar.gz",
+    "bytesTransferred": 52428800,
+    "durationMs": 1420
+  }
+}

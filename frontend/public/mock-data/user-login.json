@@ -1,0 +1,13 @@
+{
+  "eventId": "evt-login-demo-001",
+  "sourceId": "sac-auth-gateway-01",
+  "eventType": "USER_LOGIN",
+  "eventTimestamp": "2026-10-23T10:00:00Z",
+  "schemaVersion": 1,
+  "payload": {
+    "userId": "usr_98234",
+    "ipAddress": "192.168.1.105",
+    "status": "SUCCESS",
+    "authMethod": "PASSWORD"
+  }
+}

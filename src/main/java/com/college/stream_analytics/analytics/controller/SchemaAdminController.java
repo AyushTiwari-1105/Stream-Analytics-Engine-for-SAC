@@ -4,6 +4,8 @@ import com.college.stream_analytics.analytics.entity.EventSchema;
 import com.college.stream_analytics.analytics.repository.EventSchemaRepository;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/api/v1/admin/schemas")
 public class SchemaAdminController {
@@ -18,5 +20,10 @@ public class SchemaAdminController {
     public String registerSchema(@RequestBody EventSchema eventSchema) {
         schemaRepository.save(eventSchema);
         return "Schema registered successfully for: " + eventSchema.getEventType();
+    }
+
+    @GetMapping
+    public List<EventSchema> listSchemas(){
+        return schemaRepository.findAll();
     }
 }
